@@ -279,5 +279,11 @@
   <ItemGroup>
     <None Include="Resources\room_dark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minecraft eating.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A mimir_Snore Mimimimi.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
