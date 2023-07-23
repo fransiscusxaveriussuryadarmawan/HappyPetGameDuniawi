@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HappyPetGameDuniawi
 {
-    [Serializable]
+    [Serializable] //For Serialization
     public class Cat : Pet
     {
         #region fields
