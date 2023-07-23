@@ -259,6 +259,7 @@ namespace HappyPetGameDuniawi
 
             buttonSleep.Enabled = false;
             buttonSleep.BackColor = Color.WhiteSmoke;
+            this.BackgroundImage = Properties.Resources.room_dark;
             timerSleep.Start();
 
             if (myPet is Chameleon) //For Chameleon Color
@@ -468,6 +469,7 @@ namespace HappyPetGameDuniawi
             timerSleep.Stop();
             buttonSleep.Enabled = true;
             buttonSleep.BackColor = Color.DeepSkyBlue;
+            this.BackgroundImage = Properties.Resources.Room;
         }
 
         public void timerPlay_Tick(object sender, EventArgs e)
