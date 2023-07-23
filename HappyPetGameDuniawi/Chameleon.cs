@@ -43,7 +43,7 @@ namespace HappyPetGameDuniawi
             base.Energy += 60;
         }
 
-        public void CheckChangeColor()
+        public void CheckChangeColor() //ada delay karena frmGame.TimerGame
         {
             if (base.Health >= 70 && base.Energy >= 70)
             {
