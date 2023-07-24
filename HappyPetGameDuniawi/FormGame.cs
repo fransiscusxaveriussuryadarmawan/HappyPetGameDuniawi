@@ -332,7 +332,7 @@ namespace HappyPetGameDuniawi
             {
                 if (activity == "Feed")
                 {
-                    //pictureBoxPet.Image = Properties.Resources.cat_feed1;
+                    pictureBoxPet.Image = Properties.Resources.monkey_feed;
                 }
                 else if (activity == "Sleep")
                 {
