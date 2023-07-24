@@ -22,6 +22,10 @@ namespace HappyPetGameDuniawi
         {
             labelEnv.Visible = true;
             comboBoxEnv.Visible = true;
+            comboBoxEnv.Items.Clear();
+            comboBoxEnv.Items.Add("River");
+            comboBoxEnv.Items.Add("Sea");
+            comboBoxEnv.Items.Add("Pond");
             comboBoxEnv.SelectedIndex = 0;
             textBoxPetName.Text = "Fishy";
         }
@@ -98,7 +102,7 @@ namespace HappyPetGameDuniawi
             {
                 frmGame.myPet = new Penguin(textBoxPetName.Text,
                                             radioButtonPenguin.BackgroundImage,
-                                            frmGame.myPlayer);
+                                            frmGame.myPlayer, comboBoxEnv.Text);
             }
             else if (radioButtonCrocodile.Checked)
             {
@@ -124,8 +128,12 @@ namespace HappyPetGameDuniawi
 
         private void radioButtonPenguin_CheckedChanged(object sender, EventArgs e)
         {
-            labelEnv.Visible = false;
-            comboBoxEnv.Visible = false;
+            labelEnv.Visible = true;
+            comboBoxEnv.Visible = true;
+            comboBoxEnv.Items.Clear();
+            comboBoxEnv.Items.Add("Polar");
+            comboBoxEnv.Items.Add("Tropical");
+            comboBoxEnv.SelectedIndex = 0;
             textBoxPetName.Text = "Linux";
         }
 
