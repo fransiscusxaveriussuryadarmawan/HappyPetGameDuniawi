@@ -49,9 +49,21 @@ namespace HappyPetGameDuniawi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //make player
-            frmGame.myPlayer = new Player(textBox1.Text, 100,
+            //memastikan nama player tidak ada yang sama
+            foreach(Player p in frmGame.listPlayer)
+            {
+                if(textBox1.Text == p.Name)
+                {
+                    MessageBox.Show("Player name already used. Please input another name");
+                    return;
+                }
+                else
+                {
+                    //make player
+                    frmGame.myPlayer = new Player(textBox1.Text, 100,
                                 DateTime.Now);
+                }
+            }
 
             //make pet
             if (radioButtonCat.Checked)
