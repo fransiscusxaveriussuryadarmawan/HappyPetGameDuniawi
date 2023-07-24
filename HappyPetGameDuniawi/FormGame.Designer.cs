@@ -96,21 +96,21 @@ namespace HappyPetGameDuniawi
             // playGameToolStripMenuItem
             // 
             this.playGameToolStripMenuItem.Name = "playGameToolStripMenuItem";
-            this.playGameToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.playGameToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.playGameToolStripMenuItem.Text = "Play Game";
             this.playGameToolStripMenuItem.Click += new System.EventHandler(this.playGameToolStripMenuItem_Click);
             // 
             // changePetToolStripMenuItem
             // 
             this.changePetToolStripMenuItem.Name = "changePetToolStripMenuItem";
-            this.changePetToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.changePetToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.changePetToolStripMenuItem.Text = "Change Pet";
             this.changePetToolStripMenuItem.Click += new System.EventHandler(this.changePetToolStripMenuItem_Click);
             // 
             // resetGameToolStripMenuItem
             // 
             this.resetGameToolStripMenuItem.Name = "resetGameToolStripMenuItem";
-            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.resetGameToolStripMenuItem.Text = "Reset Game";
             this.resetGameToolStripMenuItem.Click += new System.EventHandler(this.resetGameToolStripMenuItem_Click);
             // 
