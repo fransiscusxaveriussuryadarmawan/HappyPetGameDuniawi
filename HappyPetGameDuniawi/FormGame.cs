@@ -713,7 +713,10 @@ namespace HappyPetGameDuniawi
             labelPlayerData.Text = myPlayer.DisplayData();
             pictureBoxPresentCoins.Visible = false;
             waktu = 0;
-            timerPresent.Start();
+            if(myPet != null)
+            {
+                timerPresent.Start();
+            }
         }
 
         private void timerPresent_Tick(object sender, EventArgs e)
