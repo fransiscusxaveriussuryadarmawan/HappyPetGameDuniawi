@@ -234,7 +234,6 @@ namespace HappyPetGameDuniawi
 
         private void buttonFeed_Click(object sender, EventArgs e)
         {
-            myPlayer.GetCoins();
             //method feed
             myPet.Feed();
             eat.Play();
@@ -271,7 +270,6 @@ namespace HappyPetGameDuniawi
 
         private void buttonSleep_Click(object sender, EventArgs e)
         {
-            myPlayer.GetCoins();
             myPet.Sleep();
 
             labelPetData.Text = myPet.DisplayData();
@@ -318,7 +316,6 @@ namespace HappyPetGameDuniawi
         {
             if (myPet is Cat)
             {
-                myPlayer.GetCoins();
                 labelPlayerData.Text = myPlayer.DisplayData();
                 ((Cat)myPet).Bath();
 
@@ -355,7 +352,6 @@ namespace HappyPetGameDuniawi
         {
             try
             {
-                myPlayer.GetCoins();
                 labelPlayerData.Text = myPlayer.DisplayData();
                 if (myPet is Fish)
                 {
@@ -562,6 +558,8 @@ namespace HappyPetGameDuniawi
 
         private void pictureBoxPresentCoins_Click(object sender, EventArgs e)
         {
+            myPlayer.GetCoins();
+            labelPlayerData.Text = myPlayer.DisplayData();
             pictureBoxPresentCoins.Top -= 1000;
             waktu = 0;
             timerPresent.Start();
