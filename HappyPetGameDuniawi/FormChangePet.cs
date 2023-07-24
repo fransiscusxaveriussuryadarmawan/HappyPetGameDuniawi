@@ -59,8 +59,26 @@ namespace HappyPetGameDuniawi
                                                   frmGame.myPlayer,
                                                   Color.Green);
                 }
+                else if (radioButtonPenguin.Checked)
+                {
+                    frmGame.myPet = new Penguin(textBoxPetName.Text,
+                                            radioButtonPenguin.BackgroundImage,
+                                            frmGame.myPlayer, comboBoxEnv.Text);
+                }
+                else if (radioButtonCrocodile.Checked)
+                {
+                    frmGame.myPet = new Crocodile(textBoxPetName.Text,
+                                                radioButtonCrocodile.BackgroundImage,
+                                                frmGame.myPlayer);
+                }
+                else if (radioButtonMonkey.Checked)
+                {
+                    frmGame.myPet = new Monkey(textBoxPetName.Text,
+                                    radioButtonMonkey.BackgroundImage,
+                                    frmGame.myPlayer);
+                }
 
-                for(int i = 0; i < frmGame.listPet.Count; i++)
+                for (int i = 0; i < frmGame.listPet.Count; i++)
                 {
                     if(frmGame.listPet[i].Owner.Name == frmGame.myPlayer.Name)
                     {
