@@ -33,11 +33,12 @@ namespace HappyPetGameDuniawi
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelData = new System.Windows.Forms.Panel();
+            this.pictureBoxCoins = new System.Windows.Forms.PictureBox();
             this.labelDateTime = new System.Windows.Forms.Label();
             this.labelPetData = new System.Windows.Forms.Label();
             this.labelPlayerData = new System.Windows.Forms.Label();
@@ -60,6 +61,7 @@ namespace HappyPetGameDuniawi
             this.timerChameleonAfk = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panelData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCoins)).BeginInit();
             this.panelActivity.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPet)).BeginInit();
             this.SuspendLayout();
@@ -91,23 +93,23 @@ namespace HappyPetGameDuniawi
             // playGameToolStripMenuItem
             // 
             this.playGameToolStripMenuItem.Name = "playGameToolStripMenuItem";
-            this.playGameToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.playGameToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.playGameToolStripMenuItem.Text = "Play Game";
             this.playGameToolStripMenuItem.Click += new System.EventHandler(this.playGameToolStripMenuItem_Click);
-            // 
-            // resetGameToolStripMenuItem
-            // 
-            this.resetGameToolStripMenuItem.Name = "resetGameToolStripMenuItem";
-            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.resetGameToolStripMenuItem.Text = "Reset Game";
-            this.resetGameToolStripMenuItem.Click += new System.EventHandler(this.resetGameToolStripMenuItem_Click);
             // 
             // changePetToolStripMenuItem
             // 
             this.changePetToolStripMenuItem.Name = "changePetToolStripMenuItem";
-            this.changePetToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.changePetToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.changePetToolStripMenuItem.Text = "Change Pet";
             this.changePetToolStripMenuItem.Click += new System.EventHandler(this.changePetToolStripMenuItem_Click);
+            // 
+            // resetGameToolStripMenuItem
+            // 
+            this.resetGameToolStripMenuItem.Name = "resetGameToolStripMenuItem";
+            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
+            this.resetGameToolStripMenuItem.Text = "Reset Game";
+            this.resetGameToolStripMenuItem.Click += new System.EventHandler(this.resetGameToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -125,7 +127,11 @@ namespace HappyPetGameDuniawi
             // 
             // panelData
             // 
+            this.panelData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelData.BackColor = System.Drawing.Color.Transparent;
+            this.panelData.Controls.Add(this.pictureBoxCoins);
             this.panelData.Controls.Add(this.labelDateTime);
             this.panelData.Controls.Add(this.labelPetData);
             this.panelData.Controls.Add(this.labelPlayerData);
@@ -133,6 +139,16 @@ namespace HappyPetGameDuniawi
             this.panelData.Name = "panelData";
             this.panelData.Size = new System.Drawing.Size(1063, 119);
             this.panelData.TabIndex = 1;
+            // 
+            // pictureBoxCoins
+            // 
+            this.pictureBoxCoins.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxCoins.Location = new System.Drawing.Point(143, 43);
+            this.pictureBoxCoins.Name = "pictureBoxCoins";
+            this.pictureBoxCoins.Size = new System.Drawing.Size(33, 33);
+            this.pictureBoxCoins.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCoins.TabIndex = 4;
+            this.pictureBoxCoins.TabStop = false;
             // 
             // labelDateTime
             // 
@@ -169,6 +185,9 @@ namespace HappyPetGameDuniawi
             // 
             // panelActivity
             // 
+            this.panelActivity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelActivity.BackColor = System.Drawing.Color.Transparent;
             this.panelActivity.Controls.Add(this.buttonSleep);
             this.panelActivity.Controls.Add(this.buttonClean);
@@ -337,6 +356,7 @@ namespace HappyPetGameDuniawi
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panelData.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCoins)).EndInit();
             this.panelActivity.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPet)).EndInit();
             this.ResumeLayout(false);
@@ -374,6 +394,7 @@ namespace HappyPetGameDuniawi
         public System.Windows.Forms.Timer timerPlay;
         private System.Windows.Forms.Timer timerChameleonAfk;
         public System.Windows.Forms.Timer timerGame;
+        private System.Windows.Forms.PictureBox pictureBoxCoins;
     }
 }
 

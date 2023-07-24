@@ -95,6 +95,12 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreenGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenGame.Designer.cs">
+      <DependentUpon>SplashScreenGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="Toy.cs" />
     <EmbeddedResource Include="FormChangePet.resx">
       <DependentUpon>FormChangePet.cs</DependentUpon>
@@ -127,6 +133,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SplashScreenGame.resx">
+      <DependentUpon>SplashScreenGame.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagramHappyPet.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -284,6 +293,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\A mimir_Snore Mimimimi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progers bar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

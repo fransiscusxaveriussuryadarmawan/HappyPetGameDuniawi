@@ -322,6 +322,16 @@ namespace HappyPetGameDuniawi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coins {
+            get {
+                object obj = ResourceManager.GetObject("coins", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fish_clean {
             get {
                 object obj = ResourceManager.GetObject("fish_clean", resourceCulture);
@@ -385,6 +395,16 @@ namespace HappyPetGameDuniawi.Properties {
         internal static System.IO.UnmanagedMemoryStream Minecraft_eating {
             get {
                 return ResourceManager.GetStream("Minecraft_eating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap progers_bar {
+            get {
+                object obj = ResourceManager.GetObject("progers bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

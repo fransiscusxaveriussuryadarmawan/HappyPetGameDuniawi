@@ -57,6 +57,7 @@ namespace HappyPetGameDuniawi
             labelPetData.Text = myPet.DisplayData();
             labelDateTime.Text = DateTime.Now.ToString();
 
+            pictureBoxCoins.Image = Properties.Resources.coins;
             panelData.Visible = true;
             labelTitle.Visible = false;
             panelActivity.Visible = true;
@@ -392,30 +393,38 @@ namespace HappyPetGameDuniawi
 
         public void timerGame_Tick(object sender, EventArgs e)
         {
-            myPet.Health -= 4;
-            myPet.Energy -= 4;
-            myPet.Happiness -= 4;
-
-            labelPetData.Text = myPet.DisplayData();
-
-            //Ubah CurrentColor Chameleon
-            if(myPet is Chameleon)
+            if (myPet == null)
             {
-                ((Chameleon)myPet).CheckChangeColor();
+                return;
             }
 
-            //cek kondisi pet
-            if(myPet.CheckHealth() == "Very Poor" 
-                && myPet.CheckEnergy() == "Weak" 
-                && myPet.CheckHappiness() == "Unhappy")
+            else
             {
-                //game over
-                timerGame.Stop();
-                MessageBox.Show("You lost");
-                panelActivity.Visible = false;
-                panelData.Visible = false;
-                pictureBoxPet.Visible = false;
-                listPlayer.Remove(myPlayer);
+                myPet.Health -= 4;
+                myPet.Energy -= 4;
+                myPet.Happiness -= 4;
+
+                labelPetData.Text = myPet.DisplayData();
+
+                //Ubah CurrentColor Chameleon
+                if (myPet is Chameleon)
+                {
+                    ((Chameleon)myPet).CheckChangeColor();
+                }
+
+                //cek kondisi pet
+                if (myPet.CheckHealth() == "Very Poor"
+                    && myPet.CheckEnergy() == "Weak"
+                    && myPet.CheckHappiness() == "Unhappy")
+                {
+                    //game over
+                    timerGame.Stop();
+                    MessageBox.Show("You lost");
+                    panelActivity.Visible = false;
+                    panelData.Visible = false;
+                    pictureBoxPet.Visible = false;
+                    listPlayer.Remove(myPlayer);
+                }
             }
         }
 
