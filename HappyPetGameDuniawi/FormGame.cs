@@ -236,7 +236,7 @@ namespace HappyPetGameDuniawi
                 }
                 else if (activity == "Clean")
                 {
-                    pictureBoxPet.Image = Properties.Resources.fish_clean;
+                    pictureBoxPet.Image = Properties.Resources.fish_clean1;
                 }
                 else if (activity == "-")
                 {
