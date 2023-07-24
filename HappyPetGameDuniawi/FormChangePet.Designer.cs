@@ -302,7 +302,7 @@ namespace HappyPetGameDuniawi
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelPlayerData);
             this.Name = "FormChangePet";
-            this.Text = "FormChangePet";
+            this.Text = "Change Your Pet";
             this.Load += new System.EventHandler(this.FormChangePet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
