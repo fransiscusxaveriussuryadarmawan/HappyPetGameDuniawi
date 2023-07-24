@@ -349,6 +349,7 @@ namespace HappyPetGameDuniawi
             // 
             // timerPresent
             // 
+            this.timerPresent.Interval = 1000;
             this.timerPresent.Tick += new System.EventHandler(this.timerPresent_Tick);
             // 
             // FormGame

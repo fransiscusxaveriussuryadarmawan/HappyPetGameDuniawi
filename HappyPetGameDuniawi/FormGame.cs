@@ -561,13 +561,15 @@ namespace HappyPetGameDuniawi
         private void timerPresent_Tick(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            int present;
+            int presentX;
+            int presentY;
             waktu++;
             
             if (waktu == 2)
             {
-                present = rnd.Next(10, 200);
-                pictureBoxPresentCoins.Location = new Point(present, 200);
+                presentX = rnd.Next(10, 200);
+                presentY = rnd.Next(120, 300);
+                pictureBoxPresentCoins.Location = new Point(150, presentY);
             }
             else
             {
