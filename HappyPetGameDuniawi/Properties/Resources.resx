@@ -190,9 +190,6 @@
   <data name="chameleonY_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chameleonY_sleep.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="A_mimir_Snore_Mimimimi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A mimir_Snore Mimimimi.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="fish_cleaningtools" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fish_cleaningtools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,9 +211,6 @@
   <data name="almond_only_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\almond only png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minecraft_eating" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minecraft eating.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="coins" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -237,5 +231,14 @@
   </data>
   <data name="presentCoins" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\presentCoins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Amimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Amimir.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fail.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -21,9 +21,9 @@ namespace HappyPetGameDuniawi
         public List<Player> listPlayer = new List<Player>();
         public List<Pet> listPet = new List<Pet>();
 
-        SoundPlayer amimir = new SoundPlayer(@"D:\Alrick\Sekolah\Object Oriented Programming\Asset OOP\Amimir.wav");
-        SoundPlayer eat = new SoundPlayer(@"D:\Alrick\Sekolah\Object Oriented Programming\Asset OOP\eat.wav");
-        SoundPlayer fail = new SoundPlayer(@"D:\Alrick\Sekolah\Object Oriented Programming\Asset OOP\fail.wav");
+        SoundPlayer amimir = new SoundPlayer(Properties.Resources.Amimir);
+        SoundPlayer eat = new SoundPlayer(Properties.Resources.eat);
+        SoundPlayer fail = new SoundPlayer(Properties.Resources.fail);
 
         private int detik;
         private int waktu;
