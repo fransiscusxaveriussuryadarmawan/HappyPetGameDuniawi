@@ -59,12 +59,12 @@ namespace HappyPetGameDuniawi
             }
         }
 
-        public void Bath()
+        public override void Bath()
         {
             this.Owner.Coins += (int)(0.3 / 2 * 100.0);
             base.Health += 30;
         }
-        public void Vaccinate()
+        public override void Vaccinate()
         {
             if (base.Owner.Coins >= 1000 && this.VaccinationStatus == false)
             {

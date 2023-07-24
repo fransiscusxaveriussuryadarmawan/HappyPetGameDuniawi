@@ -37,8 +37,48 @@ namespace HappyPetGameDuniawi
         public override void Feed()
         {
             base.Health += 30;
-            base.Energy += 50;
+            base.Energy += 25;
             this.Owner.Coins += (int)((0.3 + 0.5) / 2 * 100.0);
+        }
+
+        public override void Sleep()
+        {
+            base.Health += 30;
+            base.Energy += 75;
+            this.Owner.Coins += (int)(Math.Round((0.2 + 0.7) / 2.0, 2) * 100.0);
+        }
+
+        public override void Clean()
+        {
+            if (base.Owner.Coins >= 500)
+            {
+                base.Happiness += 40;
+                base.Health += 55;
+                base.Owner.Coins -= 500;
+            }
+            else
+            {
+                throw new Exception("You don't have enough coins");
+            }
+        }
+
+        public override void Vaccinate()
+        {
+            if (base.Owner.Coins >= 1000 && this.VaccinationStatus == false)
+            {
+                this.VaccinationStatus = true;
+                base.Health += 35;
+                base.Happiness -= 20;
+                base.Owner.Coins -= 1000;
+            }
+            else if (base.Owner.Coins < 1000)
+            {
+                throw new Exception("You don't have enough coins");
+            }
+            else if (this.VaccinationStatus == true)
+            {
+                throw new Exception("Your cat has already been vaccinated");
+            }
         }
         #endregion
     }

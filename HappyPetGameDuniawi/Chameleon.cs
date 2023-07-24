@@ -13,10 +13,12 @@ namespace HappyPetGameDuniawi
         private Color currentColor;
         #endregion
 
+        #region constructors
         public Chameleon(string name, Image picture, Player owner, Color currentColor) : base(name, picture, owner)
         {
             this.CurrentColor = currentColor;
         }
+        #endregion
 
         #region properties
         public Color CurrentColor 

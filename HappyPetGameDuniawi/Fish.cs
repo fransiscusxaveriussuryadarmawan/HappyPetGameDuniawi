@@ -39,7 +39,7 @@ namespace HappyPetGameDuniawi
             base.Energy += 40;
             this.Owner.Coins += (int)((0.2 + 0.4) / 2 * 100.0);
         }
-        public void Clean()
+        public override void Clean()
         {
             if(base.Owner.Coins >= 500)
             {

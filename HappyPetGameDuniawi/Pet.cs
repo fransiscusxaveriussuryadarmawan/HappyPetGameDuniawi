@@ -140,6 +140,20 @@ namespace HappyPetGameDuniawi
         {
 
         }
+        public virtual void Bath()
+        {
+
+        }
+
+        public virtual void Clean()
+        {
+
+        }
+
+        public virtual void Vaccinate()
+        {
+
+        }
 
         public void BuyToy(Toy newToy)
         {
