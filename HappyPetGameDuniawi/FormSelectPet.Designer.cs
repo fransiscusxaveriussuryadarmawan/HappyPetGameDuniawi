@@ -198,6 +198,7 @@ namespace HappyPetGameDuniawi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(816, 580);
             this.Controls.Add(this.radioButtonFish);
             this.Controls.Add(this.radioButtonCat);

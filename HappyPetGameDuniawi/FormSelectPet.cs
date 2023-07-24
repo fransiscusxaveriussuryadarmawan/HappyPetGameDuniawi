@@ -22,6 +22,7 @@ namespace HappyPetGameDuniawi
         {
             labelEnv.Visible = true;
             comboBoxEnv.Visible = true;
+            comboBoxEnv.SelectedIndex = 0;
             textBoxPetName.Text = "Fishy";
         }
 

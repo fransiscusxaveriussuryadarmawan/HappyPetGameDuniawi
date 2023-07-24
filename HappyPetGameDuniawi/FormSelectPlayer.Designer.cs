@@ -90,7 +90,8 @@ namespace HappyPetGameDuniawi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 390);
+            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ClientSize = new System.Drawing.Size(355, 390);
             this.Controls.Add(this.linkLabelClickHere);
             this.Controls.Add(this.labelNewPlayer);
             this.Controls.Add(this.buttonLetsPlay);

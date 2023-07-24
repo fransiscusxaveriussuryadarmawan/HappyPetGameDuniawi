@@ -33,6 +33,8 @@ namespace HappyPetGameDuniawi
 
             comboBoxToys.DataSource = frmGame.myPet.ListToys;
             comboBoxToys.DisplayMember = "Name";
+
+            pictureBoxToy.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void comboBoxToys_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,7 +43,7 @@ namespace HappyPetGameDuniawi
             {
                 selectedToy = (Toy)comboBoxToys.SelectedItem;
 
-                pictureBoxToy.Image = selectedToy.Picture;
+                pictureBoxToy.BackgroundImage = selectedToy.Picture;
                 labelToysData.Text = selectedToy.DisplayData();
             }
         }
@@ -72,6 +74,10 @@ namespace HappyPetGameDuniawi
 
         public string ToyUsed()
         {
+            if(selectedToy is null)
+            {
+                return "NoToy";
+            }
             if (selectedToy.Name == "Ball")
             {
                 return "Ball";

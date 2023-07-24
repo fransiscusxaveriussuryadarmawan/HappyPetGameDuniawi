@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Media;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,6 +20,10 @@ namespace HappyPetGameDuniawi
 
         public List<Player> listPlayer = new List<Player>();
         public List<Pet> listPet = new List<Pet>();
+
+        SoundPlayer amimir = new SoundPlayer(@"D:\Alrick\Sekolah\Object Oriented Programming\Asset OOP\Amimir.wav");
+        SoundPlayer eat = new SoundPlayer(@"D:\Alrick\Sekolah\Object Oriented Programming\Asset OOP\eat.wav");
+        SoundPlayer fail = new SoundPlayer(@"D:\Alrick\Sekolah\Object Oriented Programming\Asset OOP\fail.wav");
 
         private int detik;
         private int waktu;
@@ -232,7 +237,7 @@ namespace HappyPetGameDuniawi
             myPlayer.GetCoins();
             //method feed
             myPet.Feed();
-
+            eat.Play();
 
             //display
             labelPetData.Text = myPet.DisplayData();
@@ -271,6 +276,7 @@ namespace HappyPetGameDuniawi
 
             labelPetData.Text = myPet.DisplayData();
             labelPlayerData.Text = myPlayer.DisplayData();
+            amimir.Play();
             ChangeImageActivity("Sleep");
 
             buttonSleep.Enabled = false;
@@ -302,7 +308,6 @@ namespace HappyPetGameDuniawi
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            myPlayer.GetCoins();
             labelPlayerData.Text = myPlayer.DisplayData();
             FormSelectToys frmSelToys = new FormSelectToys();
             frmSelToys.Owner = this;
@@ -432,13 +437,16 @@ namespace HappyPetGameDuniawi
                     && myPet.CheckEnergy() == "Weak"
                     && myPet.CheckHappiness() == "Unhappy")
                 {
+                    fail.Play();
                     //game over
                     timerGame.Stop();
                     MessageBox.Show("You lost");
                     panelActivity.Visible = false;
                     panelData.Visible = false;
                     pictureBoxPet.Visible = false;
+                    labelTitle.Visible = true;
                     listPlayer.Remove(myPlayer);
+                    listPet.Remove(myPet);
                 }
             }
         }
@@ -491,6 +499,7 @@ namespace HappyPetGameDuniawi
         private void timerSleep_Tick(object sender, EventArgs e)
         {
             timerSleep.Stop();
+            amimir.Stop();
             buttonSleep.Enabled = true;
             buttonSleep.BackColor = Color.DeepSkyBlue;
             this.BackgroundImage = Properties.Resources.Room;
