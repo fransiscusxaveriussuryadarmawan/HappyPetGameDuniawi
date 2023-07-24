@@ -100,6 +100,11 @@ namespace HappyPetGameDuniawi
         {
             comboBoxEnv.Enabled = true;
             comboBoxEnv.Visible = true;
+            comboBoxEnv.Items.Clear();
+            comboBoxEnv.Items.Add("River");
+            comboBoxEnv.Items.Add("Sea");
+            comboBoxEnv.Items.Add("Pond");
+            comboBoxEnv.SelectedIndex = 0;
             textBoxPetName.Focus();
         }
 
@@ -112,8 +117,12 @@ namespace HappyPetGameDuniawi
 
         private void radioButtonPenguin_CheckedChanged(object sender, EventArgs e)
         {
-            comboBoxEnv.Enabled = false;
-            comboBoxEnv.Visible = false;
+            comboBoxEnv.Enabled = true;
+            comboBoxEnv.Visible = true;
+            comboBoxEnv.Items.Clear();
+            comboBoxEnv.Items.Add("Polar");
+            comboBoxEnv.Items.Add("Tropical");
+            comboBoxEnv.SelectedIndex = 0;
             textBoxPetName.Focus();
         }
 
