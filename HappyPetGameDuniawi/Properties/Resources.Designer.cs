@@ -332,16 +332,6 @@ namespace HappyPetGameDuniawi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap coins_present {
-            get {
-                object obj = ResourceManager.GetObject("coins_present", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap crocodile_clean {
             get {
                 object obj = ResourceManager.GetObject("crocodile_clean", resourceCulture);

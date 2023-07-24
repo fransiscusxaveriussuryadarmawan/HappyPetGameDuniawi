@@ -526,13 +526,13 @@ namespace HappyPetGameDuniawi
         {
             try
             {
-                labelPlayerData.Text = myPlayer.DisplayData();
                 if (myPet is Fish)
                 {
                     ((Fish)myPet).Clean();
                     ChangeImageActivity("Clean");
 
                     labelPetData.Text = myPet.DisplayData();
+                    labelPlayerData.Text = myPlayer.DisplayData();
 
                     buttonClean.Enabled = false;
                     buttonClean.BackColor = Color.WhiteSmoke;
@@ -542,6 +542,7 @@ namespace HappyPetGameDuniawi
                 {
                     ((Crocodile)myPet).Clean();
                     ChangeImageActivity("Clean");
+                    labelPlayerData.Text = myPlayer.DisplayData();
 
                     labelPetData.Text = myPet.DisplayData();
 
