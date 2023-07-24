@@ -203,7 +203,7 @@ namespace HappyPetGameDuniawi
             // radioButtonCrocodile
             // 
             this.radioButtonCrocodile.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonCrocodile.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.fish_happy;
+            this.radioButtonCrocodile.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.crocodile_happy;
             this.radioButtonCrocodile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radioButtonCrocodile.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButtonCrocodile.Location = new System.Drawing.Point(296, 408);
@@ -228,7 +228,7 @@ namespace HappyPetGameDuniawi
             // radioButtonMonkey
             // 
             this.radioButtonMonkey.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonMonkey.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.fish_happy;
+            this.radioButtonMonkey.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.monkey_happpy;
             this.radioButtonMonkey.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radioButtonMonkey.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButtonMonkey.Location = new System.Drawing.Point(561, 408);
@@ -253,7 +253,7 @@ namespace HappyPetGameDuniawi
             // radioButtonPenguin
             // 
             this.radioButtonPenguin.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonPenguin.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.fish_happy;
+            this.radioButtonPenguin.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.penguin_happy;
             this.radioButtonPenguin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radioButtonPenguin.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
             this.radioButtonPenguin.Location = new System.Drawing.Point(56, 408);

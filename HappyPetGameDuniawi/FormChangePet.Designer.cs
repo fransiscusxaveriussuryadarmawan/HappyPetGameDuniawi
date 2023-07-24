@@ -43,6 +43,12 @@ namespace HappyPetGameDuniawi
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelPlayerData = new System.Windows.Forms.Label();
+            this.radioButtonPenguin = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.radioButtonMonkey = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.radioButtonCrocodile = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // radioButtonFish
@@ -51,9 +57,9 @@ namespace HappyPetGameDuniawi
             this.radioButtonFish.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.fish_happy;
             this.radioButtonFish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radioButtonFish.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radioButtonFish.Location = new System.Drawing.Point(289, 188);
+            this.radioButtonFish.Location = new System.Drawing.Point(289, 132);
             this.radioButtonFish.Name = "radioButtonFish";
-            this.radioButtonFish.Size = new System.Drawing.Size(215, 173);
+            this.radioButtonFish.Size = new System.Drawing.Size(215, 215);
             this.radioButtonFish.TabIndex = 16;
             this.radioButtonFish.TabStop = true;
             this.radioButtonFish.UseVisualStyleBackColor = false;
@@ -65,9 +71,9 @@ namespace HappyPetGameDuniawi
             this.radioButtonCat.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.cat_happy;
             this.radioButtonCat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radioButtonCat.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radioButtonCat.Location = new System.Drawing.Point(55, 185);
+            this.radioButtonCat.Location = new System.Drawing.Point(55, 132);
             this.radioButtonCat.Name = "radioButtonCat";
-            this.radioButtonCat.Size = new System.Drawing.Size(197, 179);
+            this.radioButtonCat.Size = new System.Drawing.Size(197, 218);
             this.radioButtonCat.TabIndex = 17;
             this.radioButtonCat.TabStop = true;
             this.radioButtonCat.UseVisualStyleBackColor = false;
@@ -79,9 +85,9 @@ namespace HappyPetGameDuniawi
             this.radioButtonChameleon.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.chameleonG_def;
             this.radioButtonChameleon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radioButtonChameleon.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radioButtonChameleon.Location = new System.Drawing.Point(560, 185);
+            this.radioButtonChameleon.Location = new System.Drawing.Point(560, 132);
             this.radioButtonChameleon.Name = "radioButtonChameleon";
-            this.radioButtonChameleon.Size = new System.Drawing.Size(210, 176);
+            this.radioButtonChameleon.Size = new System.Drawing.Size(210, 215);
             this.radioButtonChameleon.TabIndex = 18;
             this.radioButtonChameleon.TabStop = true;
             this.radioButtonChameleon.UseVisualStyleBackColor = false;
@@ -91,7 +97,7 @@ namespace HappyPetGameDuniawi
             // 
             this.labelChameleon.BackColor = System.Drawing.Color.Transparent;
             this.labelChameleon.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChameleon.Location = new System.Drawing.Point(598, 367);
+            this.labelChameleon.Location = new System.Drawing.Point(598, 353);
             this.labelChameleon.Name = "labelChameleon";
             this.labelChameleon.Size = new System.Drawing.Size(119, 34);
             this.labelChameleon.TabIndex = 21;
@@ -102,7 +108,7 @@ namespace HappyPetGameDuniawi
             // 
             this.labelFish.BackColor = System.Drawing.Color.Transparent;
             this.labelFish.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFish.Location = new System.Drawing.Point(369, 367);
+            this.labelFish.Location = new System.Drawing.Point(369, 353);
             this.labelFish.Name = "labelFish";
             this.labelFish.Size = new System.Drawing.Size(63, 34);
             this.labelFish.TabIndex = 22;
@@ -113,7 +119,7 @@ namespace HappyPetGameDuniawi
             // 
             this.labelCat.BackColor = System.Drawing.Color.Transparent;
             this.labelCat.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat.Location = new System.Drawing.Point(123, 367);
+            this.labelCat.Location = new System.Drawing.Point(123, 353);
             this.labelCat.Name = "labelCat";
             this.labelCat.Size = new System.Drawing.Size(58, 34);
             this.labelCat.TabIndex = 23;
@@ -122,14 +128,14 @@ namespace HappyPetGameDuniawi
             // 
             // textBoxPetName
             // 
-            this.textBoxPetName.Location = new System.Drawing.Point(302, 421);
+            this.textBoxPetName.Location = new System.Drawing.Point(302, 702);
             this.textBoxPetName.Name = "textBoxPetName";
             this.textBoxPetName.Size = new System.Drawing.Size(127, 22);
             this.textBoxPetName.TabIndex = 29;
             // 
             // textBoxPlayer
             // 
-            this.textBoxPlayer.Location = new System.Drawing.Point(170, 48);
+            this.textBoxPlayer.Location = new System.Drawing.Point(170, 36);
             this.textBoxPlayer.Name = "textBoxPlayer";
             this.textBoxPlayer.Size = new System.Drawing.Size(154, 22);
             this.textBoxPlayer.TabIndex = 28;
@@ -142,7 +148,7 @@ namespace HappyPetGameDuniawi
             "River",
             "Sea",
             "Pond"});
-            this.comboBoxEnv.Location = new System.Drawing.Point(616, 420);
+            this.comboBoxEnv.Location = new System.Drawing.Point(616, 701);
             this.comboBoxEnv.Name = "comboBoxEnv";
             this.comboBoxEnv.Size = new System.Drawing.Size(121, 24);
             this.comboBoxEnv.TabIndex = 27;
@@ -150,7 +156,7 @@ namespace HappyPetGameDuniawi
             // buttonPlay
             // 
             this.buttonPlay.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlay.Location = new System.Drawing.Point(289, 503);
+            this.buttonPlay.Location = new System.Drawing.Point(289, 771);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(213, 56);
             this.buttonPlay.TabIndex = 26;
@@ -161,7 +167,7 @@ namespace HappyPetGameDuniawi
             // labelEnv
             // 
             this.labelEnv.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnv.Location = new System.Drawing.Point(452, 414);
+            this.labelEnv.Location = new System.Drawing.Point(452, 695);
             this.labelEnv.Name = "labelEnv";
             this.labelEnv.Size = new System.Drawing.Size(219, 34);
             this.labelEnv.TabIndex = 25;
@@ -170,7 +176,7 @@ namespace HappyPetGameDuniawi
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(36, 414);
+            this.label6.Location = new System.Drawing.Point(36, 695);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(261, 34);
             this.label6.TabIndex = 24;
@@ -179,7 +185,7 @@ namespace HappyPetGameDuniawi
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 109);
+            this.label1.Location = new System.Drawing.Point(50, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 34);
             this.label1.TabIndex = 20;
@@ -188,18 +194,99 @@ namespace HappyPetGameDuniawi
             // labelPlayerData
             // 
             this.labelPlayerData.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlayerData.Location = new System.Drawing.Point(50, 41);
+            this.labelPlayerData.Location = new System.Drawing.Point(50, 29);
             this.labelPlayerData.Name = "labelPlayerData";
             this.labelPlayerData.Size = new System.Drawing.Size(219, 34);
             this.labelPlayerData.TabIndex = 19;
             this.labelPlayerData.Text = "Player :";
+            // 
+            // radioButtonPenguin
+            // 
+            this.radioButtonPenguin.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonPenguin.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.penguin_happy;
+            this.radioButtonPenguin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButtonPenguin.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.radioButtonPenguin.Location = new System.Drawing.Point(47, 407);
+            this.radioButtonPenguin.Name = "radioButtonPenguin";
+            this.radioButtonPenguin.Size = new System.Drawing.Size(215, 215);
+            this.radioButtonPenguin.TabIndex = 34;
+            this.radioButtonPenguin.TabStop = true;
+            this.radioButtonPenguin.UseVisualStyleBackColor = false;
+            this.radioButtonPenguin.CheckedChanged += new System.EventHandler(this.radioButtonPenguin_CheckedChanged);
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(86, 628);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(134, 34);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "Penguin";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // radioButtonMonkey
+            // 
+            this.radioButtonMonkey.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonMonkey.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.monkey_happpy;
+            this.radioButtonMonkey.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButtonMonkey.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.radioButtonMonkey.Location = new System.Drawing.Point(552, 407);
+            this.radioButtonMonkey.Name = "radioButtonMonkey";
+            this.radioButtonMonkey.Size = new System.Drawing.Size(215, 215);
+            this.radioButtonMonkey.TabIndex = 32;
+            this.radioButtonMonkey.TabStop = true;
+            this.radioButtonMonkey.UseVisualStyleBackColor = false;
+            this.radioButtonMonkey.CheckedChanged += new System.EventHandler(this.radioButtonMonkey_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(610, 628);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 34);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Monkey";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // radioButtonCrocodile
+            // 
+            this.radioButtonCrocodile.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonCrocodile.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.crocodile_happy;
+            this.radioButtonCrocodile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.radioButtonCrocodile.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.radioButtonCrocodile.Location = new System.Drawing.Point(287, 407);
+            this.radioButtonCrocodile.Name = "radioButtonCrocodile";
+            this.radioButtonCrocodile.Size = new System.Drawing.Size(215, 215);
+            this.radioButtonCrocodile.TabIndex = 30;
+            this.radioButtonCrocodile.TabStop = true;
+            this.radioButtonCrocodile.UseVisualStyleBackColor = false;
+            this.radioButtonCrocodile.CheckedChanged += new System.EventHandler(this.radioButtonCrocodile_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(329, 628);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 34);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Crocodile";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FormChangePet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(816, 587);
+            this.ClientSize = new System.Drawing.Size(816, 870);
+            this.Controls.Add(this.radioButtonPenguin);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.radioButtonMonkey);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.radioButtonCrocodile);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButtonFish);
             this.Controls.Add(this.radioButtonCat);
             this.Controls.Add(this.radioButtonChameleon);
@@ -238,5 +325,11 @@ namespace HappyPetGameDuniawi
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelPlayerData;
+        private System.Windows.Forms.RadioButton radioButtonPenguin;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton radioButtonMonkey;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton radioButtonCrocodile;
+        private System.Windows.Forms.Label label2;
     }
 }
