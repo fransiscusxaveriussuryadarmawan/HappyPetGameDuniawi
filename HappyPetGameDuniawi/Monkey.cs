@@ -6,6 +6,7 @@ using System.Text;
 
 namespace HappyPetGameDuniawi
 {
+    [Serializable]
     public class Monkey : Pet
     {
         #region data members

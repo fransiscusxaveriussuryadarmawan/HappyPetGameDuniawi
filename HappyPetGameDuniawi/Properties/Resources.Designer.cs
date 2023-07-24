@@ -19,7 +19,7 @@ namespace HappyPetGameDuniawi.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -523,6 +523,36 @@ namespace HappyPetGameDuniawi.Properties {
         internal static System.Drawing.Bitmap penguin_happy {
             get {
                 object obj = ResourceManager.GetObject("penguin_happy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap penguin_play_ball {
+            get {
+                object obj = ResourceManager.GetObject("penguin_play_ball", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap penguin_play_stick {
+            get {
+                object obj = ResourceManager.GetObject("penguin_play_stick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap penguin_play_yarn {
+            get {
+                object obj = ResourceManager.GetObject("penguin_play_yarn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

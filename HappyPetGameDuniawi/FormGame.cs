@@ -286,15 +286,15 @@ namespace HappyPetGameDuniawi
                 }
                 else if (activity == "Ball")
                 {
-                    //pictureBoxPet.Image = Properties.Resources.cat_play_ball1;
+                    pictureBoxPet.Image = Properties.Resources.penguin_play_ball;
                 }
                 else if (activity == "Stick")
                 {
-                    //pictureBoxPet.Image = Properties.Resources.cat_play_stick;
+                    pictureBoxPet.Image = Properties.Resources.penguin_play_stick;
                 }
                 else if (activity == "Yarn")
                 {
-                    //pictureBoxPet.Image = Properties.Resources.cat_play_yarn1;
+                    pictureBoxPet.Image = Properties.Resources.penguin_play_yarn;
                 }
                 else if (activity == "NoToy")
                 {
@@ -448,6 +448,7 @@ namespace HappyPetGameDuniawi
         private void buttonPlay_Click(object sender, EventArgs e)
         {
             labelPlayerData.Text = myPlayer.DisplayData();
+            amimir.Stop();
             FormSelectToys frmSelToys = new FormSelectToys();
             frmSelToys.Owner = this;
             frmSelToys.ShowDialog();
@@ -455,6 +456,7 @@ namespace HappyPetGameDuniawi
 
         private void buttonBath_Click(object sender, EventArgs e)
         {
+            amimir.Stop();
             if (myPet is Cat)
             {
                 labelPlayerData.Text = myPlayer.DisplayData();
