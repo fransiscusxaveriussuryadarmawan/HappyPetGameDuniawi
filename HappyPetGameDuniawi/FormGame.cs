@@ -589,6 +589,7 @@ namespace HappyPetGameDuniawi
                     labelTitle.Visible = true;
                     listPlayer.Remove(myPlayer);
                     listPet.Remove(myPet);
+                    myPet = null;
                 }
             }
         }

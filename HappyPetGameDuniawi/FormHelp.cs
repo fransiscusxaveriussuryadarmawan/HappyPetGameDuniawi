@@ -54,7 +54,10 @@ namespace HappyPetGameDuniawi
 
         private void FormHelp_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmGame.timerGame.Start();
+            if(frmGame.myPet != null)
+            {
+                frmGame.timerGame.Start();
+            }
         }
     }
 }
