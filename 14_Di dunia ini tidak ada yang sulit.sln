@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32929.386
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyPetGameDuniawi", "HappyPetGameDuniawi\HappyPetGameDuniawi.csproj", "{D0F78E0A-BD96-4063-ADE1-CC8FBFB6374F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Di dunia ini tidak ada yang sulit", "HappyPetGameDuniawi\14_Di dunia ini tidak ada yang sulit.csproj", "{D0F78E0A-BD96-4063-ADE1-CC8FBFB6374F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
