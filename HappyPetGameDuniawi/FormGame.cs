@@ -560,7 +560,7 @@ namespace HappyPetGameDuniawi
         {
             myPlayer.GetCoins();
             labelPlayerData.Text = myPlayer.DisplayData();
-            pictureBoxPresentCoins.Top -= 1000;
+            pictureBoxPresentCoins.Visible = false;
             waktu = 0;
             timerPresent.Start();
         }
@@ -585,6 +585,7 @@ namespace HappyPetGameDuniawi
                 }
                 else
                 {
+                    pictureBoxPresentCoins.Visible = true;
                     pictureBoxPresentCoins.Location = new Point(presentX, presentY);
                 }
             }
