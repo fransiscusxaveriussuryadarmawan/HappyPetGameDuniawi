@@ -366,5 +366,14 @@
   <ItemGroup>
     <None Include="Resources\penguin_play_yarn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_play_ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_play_stick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_play_yarn.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

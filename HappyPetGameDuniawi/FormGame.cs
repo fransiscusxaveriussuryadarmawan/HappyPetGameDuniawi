@@ -348,15 +348,15 @@ namespace HappyPetGameDuniawi
                 }
                 else if (activity == "Ball")
                 {
-                    //pictureBoxPet.Image = Properties.Resources.cat_play_ball1;
+                    pictureBoxPet.Image = Properties.Resources.monkey_play_ball;
                 }
                 else if (activity == "Stick")
                 {
-                    //pictureBoxPet.Image = Properties.Resources.cat_play_stick;
+                    pictureBoxPet.Image = Properties.Resources.monkey_play_stick;
                 }
                 else if (activity == "Yarn")
                 {
-                    //pictureBoxPet.Image = Properties.Resources.cat_play_yarn1;
+                    pictureBoxPet.Image = Properties.Resources.monkey_play_yarn;
                 }
                 else if (activity == "NoToy")
                 {
