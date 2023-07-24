@@ -61,7 +61,6 @@ namespace HappyPetGameDuniawi
             this.timerChameleonAfk = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxPresentCoins = new System.Windows.Forms.PictureBox();
             this.timerPresent = new System.Windows.Forms.Timer(this.components);
-            this.scoreBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCoins)).BeginInit();
@@ -89,8 +88,7 @@ namespace HappyPetGameDuniawi
             this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.playGameToolStripMenuItem,
             this.changePetToolStripMenuItem,
-            this.resetGameToolStripMenuItem,
-            this.scoreBoardToolStripMenuItem});
+            this.resetGameToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
             this.gameToolStripMenuItem.Size = new System.Drawing.Size(79, 33);
             this.gameToolStripMenuItem.Text = "Game";
@@ -353,13 +351,6 @@ namespace HappyPetGameDuniawi
             // 
             this.timerPresent.Tick += new System.EventHandler(this.timerPresent_Tick);
             // 
-            // scoreBoardToolStripMenuItem
-            // 
-            this.scoreBoardToolStripMenuItem.Name = "scoreBoardToolStripMenuItem";
-            this.scoreBoardToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.scoreBoardToolStripMenuItem.Text = "ScoreBoard";
-            this.scoreBoardToolStripMenuItem.Click += new System.EventHandler(this.scoreBoardToolStripMenuItem_Click);
-            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -426,7 +417,6 @@ namespace HappyPetGameDuniawi
         private System.Windows.Forms.PictureBox pictureBoxCoins;
         private System.Windows.Forms.PictureBox pictureBoxPresentCoins;
         private System.Windows.Forms.Timer timerPresent;
-        private System.Windows.Forms.ToolStripMenuItem scoreBoardToolStripMenuItem;
     }
 }
 
