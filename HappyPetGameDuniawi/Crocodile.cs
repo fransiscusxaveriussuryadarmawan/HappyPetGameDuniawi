@@ -37,15 +37,15 @@ namespace HappyPetGameDuniawi
         public override void Feed()
         {
             base.Health += 30;
-            base.Energy += 25;
-            this.Owner.Coins += (int)((0.3 + 0.5) / 2 * 100.0);
+            base.Energy += 20;
+            this.Owner.Coins += (int)((0.3 + 0.2) / 2 * 100.0);
         }
 
         public override void Sleep()
         {
             base.Health += 30;
-            base.Energy += 75;
-            this.Owner.Coins += (int)(Math.Round((0.2 + 0.7) / 2.0, 2) * 100.0);
+            base.Energy += 70;
+            this.Owner.Coins += (int)(Math.Round((0.3 + 0.7) / 2.0, 2) * 100.0);
         }
 
         public override void Clean()
