@@ -212,6 +212,7 @@ namespace HappyPetGameDuniawi
             this.radioButtonPenguin.TabIndex = 34;
             this.radioButtonPenguin.TabStop = true;
             this.radioButtonPenguin.UseVisualStyleBackColor = false;
+            this.radioButtonPenguin.CheckedChanged += new System.EventHandler(this.radioButtonPenguin_CheckedChanged);
             // 
             // label4
             // 
@@ -236,6 +237,7 @@ namespace HappyPetGameDuniawi
             this.radioButtonMonkey.TabIndex = 32;
             this.radioButtonMonkey.TabStop = true;
             this.radioButtonMonkey.UseVisualStyleBackColor = false;
+            this.radioButtonMonkey.CheckedChanged += new System.EventHandler(this.radioButtonMonkey_CheckedChanged);
             // 
             // label3
             // 
@@ -260,6 +262,7 @@ namespace HappyPetGameDuniawi
             this.radioButtonCrocodile.TabIndex = 30;
             this.radioButtonCrocodile.TabStop = true;
             this.radioButtonCrocodile.UseVisualStyleBackColor = false;
+            this.radioButtonCrocodile.CheckedChanged += new System.EventHandler(this.radioButtonCrocodile_CheckedChanged);
             // 
             // label2
             // 
