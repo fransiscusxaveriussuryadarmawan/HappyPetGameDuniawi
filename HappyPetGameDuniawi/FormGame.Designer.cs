@@ -61,6 +61,7 @@ namespace HappyPetGameDuniawi
             this.timerChameleonAfk = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxPresentCoins = new System.Windows.Forms.PictureBox();
             this.timerPresent = new System.Windows.Forms.Timer(this.components);
+            this.scoreBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCoins)).BeginInit();
@@ -88,7 +89,8 @@ namespace HappyPetGameDuniawi
             this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.playGameToolStripMenuItem,
             this.changePetToolStripMenuItem,
-            this.resetGameToolStripMenuItem});
+            this.resetGameToolStripMenuItem,
+            this.scoreBoardToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
             this.gameToolStripMenuItem.Size = new System.Drawing.Size(79, 33);
             this.gameToolStripMenuItem.Text = "Game";
@@ -96,21 +98,21 @@ namespace HappyPetGameDuniawi
             // playGameToolStripMenuItem
             // 
             this.playGameToolStripMenuItem.Name = "playGameToolStripMenuItem";
-            this.playGameToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
+            this.playGameToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
             this.playGameToolStripMenuItem.Text = "Play Game";
             this.playGameToolStripMenuItem.Click += new System.EventHandler(this.playGameToolStripMenuItem_Click);
             // 
             // changePetToolStripMenuItem
             // 
             this.changePetToolStripMenuItem.Name = "changePetToolStripMenuItem";
-            this.changePetToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
+            this.changePetToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
             this.changePetToolStripMenuItem.Text = "Change Pet";
             this.changePetToolStripMenuItem.Click += new System.EventHandler(this.changePetToolStripMenuItem_Click);
             // 
             // resetGameToolStripMenuItem
             // 
             this.resetGameToolStripMenuItem.Name = "resetGameToolStripMenuItem";
-            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
+            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
             this.resetGameToolStripMenuItem.Text = "Reset Game";
             this.resetGameToolStripMenuItem.Click += new System.EventHandler(this.resetGameToolStripMenuItem_Click);
             // 
@@ -351,6 +353,13 @@ namespace HappyPetGameDuniawi
             // 
             this.timerPresent.Tick += new System.EventHandler(this.timerPresent_Tick);
             // 
+            // scoreBoardToolStripMenuItem
+            // 
+            this.scoreBoardToolStripMenuItem.Name = "scoreBoardToolStripMenuItem";
+            this.scoreBoardToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.scoreBoardToolStripMenuItem.Text = "ScoreBoard";
+            this.scoreBoardToolStripMenuItem.Click += new System.EventHandler(this.scoreBoardToolStripMenuItem_Click);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -417,6 +426,7 @@ namespace HappyPetGameDuniawi
         private System.Windows.Forms.PictureBox pictureBoxCoins;
         private System.Windows.Forms.PictureBox pictureBoxPresentCoins;
         private System.Windows.Forms.Timer timerPresent;
+        private System.Windows.Forms.ToolStripMenuItem scoreBoardToolStripMenuItem;
     }
 }
 

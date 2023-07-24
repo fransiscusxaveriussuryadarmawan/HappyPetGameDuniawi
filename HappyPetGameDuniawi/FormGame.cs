@@ -574,5 +574,12 @@ namespace HappyPetGameDuniawi
                 return;
             }
         }
+
+        private void scoreBoardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormScoreBoard frmScoreBoard = new FormScoreBoard();
+            frmScoreBoard.Owner = this;
+            frmScoreBoard.ShowDialog();
+        }
     }
 }

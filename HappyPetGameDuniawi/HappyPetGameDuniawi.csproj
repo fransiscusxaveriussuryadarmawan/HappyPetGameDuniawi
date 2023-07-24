@@ -67,6 +67,12 @@
     <Compile Include="FormHelp.Designer.cs">
       <DependentUpon>FormHelp.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormScoreBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScoreBoard.Designer.cs">
+      <DependentUpon>FormScoreBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSelectPet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormHelp.resx">
       <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScoreBoard.resx">
+      <DependentUpon>FormScoreBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSelectPet.resx">
       <DependentUpon>FormSelectPet.cs</DependentUpon>
