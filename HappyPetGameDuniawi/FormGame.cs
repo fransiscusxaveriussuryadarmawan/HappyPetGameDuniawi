@@ -274,7 +274,100 @@ namespace HappyPetGameDuniawi
                     pictureBoxPet.Image = myPet.Picture;
                 }
             }
-
+            else if (myPet is Penguin)
+            {
+                if (activity == "Feed")
+                {
+                    pictureBoxPet.Image = Properties.Resources.penguin_feed;
+                }
+                else if (activity == "Sleep")
+                {
+                    pictureBoxPet.Image = Properties.Resources.penguin_sleep;
+                }
+                else if (activity == "Ball")
+                {
+                    //pictureBoxPet.Image = Properties.Resources.cat_play_ball1;
+                }
+                else if (activity == "Stick")
+                {
+                    //pictureBoxPet.Image = Properties.Resources.cat_play_stick;
+                }
+                else if (activity == "Yarn")
+                {
+                    //pictureBoxPet.Image = Properties.Resources.cat_play_yarn1;
+                }
+                else if (activity == "NoToy")
+                {
+                    return;
+                }
+                else if (activity == "-")
+                {
+                    pictureBoxPet.Image = myPet.Picture;
+                }
+            }
+            else if (myPet is Crocodile)
+            {
+                if (activity == "Feed")
+                {
+                    pictureBoxPet.Image = Properties.Resources.crocodile_feed;
+                }
+                else if (activity == "Sleep")
+                {
+                    pictureBoxPet.Image = Properties.Resources.crocodile_sleep;
+                }
+                else if (activity == "Clean")
+                {
+                    pictureBoxPet.Image = Properties.Resources.crocodile_clean;
+                }
+                else if (activity == "Vaccinate")
+                {
+                    pictureBoxPet.Image = Properties.Resources.crocodile_vaccinate;
+                }
+                else if (activity == "-")
+                {
+                    pictureBoxPet.Image = myPet.Picture;
+                }
+            }
+            else if (myPet is Monkey)
+            {
+                if (activity == "Feed")
+                {
+                    //pictureBoxPet.Image = Properties.Resources.cat_feed1;
+                }
+                else if (activity == "Sleep")
+                {
+                    pictureBoxPet.Image = Properties.Resources.monkey_sleep;
+                }
+                else if (activity == "Bath")
+                {
+                    pictureBoxPet.Image = Properties.Resources.monkey_bath;
+                }
+                else if (activity == "Vaccinate")
+                {
+                    pictureBoxPet.Image = Properties.Resources.monkey_vaccinate;
+                }
+                else if (activity == "Ball")
+                {
+                    //pictureBoxPet.Image = Properties.Resources.cat_play_ball1;
+                }
+                else if (activity == "Stick")
+                {
+                    //pictureBoxPet.Image = Properties.Resources.cat_play_stick;
+                }
+                else if (activity == "Yarn")
+                {
+                    //pictureBoxPet.Image = Properties.Resources.cat_play_yarn1;
+                }
+                else if (activity == "NoToy")
+                {
+                    return;
+                }
+                else if (activity == "-")
+                {
+                    pictureBoxPet.Image = myPet.Picture;
+                }
+            }
+            
             detik = 0;
             timerPictureActivity.Interval = 1000;
             timerPictureActivity.Start();
