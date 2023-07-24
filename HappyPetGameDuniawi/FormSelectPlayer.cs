@@ -42,13 +42,15 @@ namespace HappyPetGameDuniawi
             }
             frmGame.myPlayer = (Player)comboBoxPlayer.SelectedItem;
 
-            foreach(Pet p in frmGame.listPet)
+            foreach (Pet p in frmGame.listPet)
             {
-                if(p.Owner.Name == frmGame.myPlayer.Name)
+                if (p.Owner.Name == frmGame.myPlayer.Name)
                 {
                     frmGame.myPet = p;
                 }
             }
+
+
             frmGame.StartGame();
             this.Close();
         }
