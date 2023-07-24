@@ -63,7 +63,10 @@ namespace HappyPetGameDuniawi
             labelPlayerData.Text = myPlayer.DisplayData();
             labelPetData.Text = myPet.DisplayData();
             labelDateTime.Text = DateTime.Now.ToString();
+            pictureBoxPresentCoins.Visible = true;
             PresentCoins();
+
+            timerPresent.Start();
 
             pictureBoxCoins.Image = Properties.Resources.coins;
             panelData.Visible = true;
@@ -482,8 +485,10 @@ namespace HappyPetGameDuniawi
                     fail.Play();
                     //game over
                     timerGame.Stop();
+                    timerPresent.Stop();
                     MessageBox.Show("You lost");
                     panelActivity.Visible = false;
+                    pictureBoxPresentCoins.Visible = false;
                     panelData.Visible = false;
                     pictureBoxPet.Visible = false;
                     labelTitle.Visible = true;
@@ -620,7 +625,7 @@ namespace HappyPetGameDuniawi
             int presentY;
             waktu++;
 
-            if (waktu == 2)
+            if (waktu == 10)
             {
                 presentX = rnd.Next(8, 720);
                 presentY = rnd.Next(120, 300);

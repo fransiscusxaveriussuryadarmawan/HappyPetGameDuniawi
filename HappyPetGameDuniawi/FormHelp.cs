@@ -41,7 +41,10 @@ namespace HappyPetGameDuniawi
             return "Pet Activities:\n" +
                 "1. Cat\n   (Feed, Sleep, Play, Bath, Vaccinate)" +
                 "\n2. Fish\n   (Feed, Clean)" +
-                "\n3. Chameleon\n   (Feed, Sleep)";
+                "\n3. Chameleon\n   (Feed, Sleep)" +
+                "\n4. Penguin\n   (Feed, Sleep, Play)" +
+                "\n5. Crocodile\n   (Feed, Sleep, Clean, Vaccinate)" +
+                "\n6. Monkey\n   (Feed, Sleep, Play, Bath, Vaccinate)";
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
