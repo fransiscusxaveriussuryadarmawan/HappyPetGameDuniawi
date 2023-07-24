@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Cat.cs" />
     <Compile Include="Chameleon.cs" />
+    <Compile Include="Crocodile.cs" />
     <Compile Include="Fish.cs" />
     <Compile Include="FormChangePet.cs">
       <SubType>Form</SubType>
@@ -91,6 +92,8 @@
     <Compile Include="FormToysShop.Designer.cs">
       <DependentUpon>FormToysShop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Monkey.cs" />
+    <Compile Include="Penguin.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
