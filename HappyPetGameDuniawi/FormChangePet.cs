@@ -111,6 +111,7 @@ namespace HappyPetGameDuniawi
         {
             comboBoxEnv.Enabled = false;
             comboBoxEnv.Visible = false;
+            labelEnv.Visible = false;
             textBoxPetName.Focus();
         }
 
@@ -118,6 +119,7 @@ namespace HappyPetGameDuniawi
         {
             comboBoxEnv.Enabled = true;
             comboBoxEnv.Visible = true;
+            labelEnv.Visible = true;
             comboBoxEnv.Items.Clear();
             comboBoxEnv.Items.Add("River");
             comboBoxEnv.Items.Add("Sea");
@@ -130,6 +132,7 @@ namespace HappyPetGameDuniawi
         {
             comboBoxEnv.Enabled = false;
             comboBoxEnv.Visible = false;
+            labelEnv.Visible = false;
             textBoxPetName.Focus();
         }
 
@@ -137,6 +140,7 @@ namespace HappyPetGameDuniawi
         {
             comboBoxEnv.Enabled = true;
             comboBoxEnv.Visible = true;
+            labelEnv.Visible = true;
             comboBoxEnv.Items.Clear();
             comboBoxEnv.Items.Add("Polar");
             comboBoxEnv.Items.Add("Tropical");
@@ -148,6 +152,7 @@ namespace HappyPetGameDuniawi
         {
             comboBoxEnv.Enabled = false;
             comboBoxEnv.Visible = false;
+            labelEnv.Visible = false;
             textBoxPetName.Focus();
         }
 
@@ -155,6 +160,7 @@ namespace HappyPetGameDuniawi
         {
             comboBoxEnv.Enabled = false;
             comboBoxEnv.Visible = false;
+            labelEnv.Visible = false;
             textBoxPetName.Focus();
         }
     }
