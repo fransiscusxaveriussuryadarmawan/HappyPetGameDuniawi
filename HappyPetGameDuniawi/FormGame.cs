@@ -538,6 +538,17 @@ namespace HappyPetGameDuniawi
                     buttonClean.BackColor = Color.WhiteSmoke;
                     timerClean.Start();
                 }
+                if (myPet is Crocodile)
+                {
+                    ((Crocodile)myPet).Clean();
+                    ChangeImageActivity("Clean");
+
+                    labelPetData.Text = myPet.DisplayData();
+
+                    buttonClean.Enabled = false;
+                    buttonClean.BackColor = Color.WhiteSmoke;
+                    timerClean.Start();
+                }
             }
             catch (Exception x)
             {
