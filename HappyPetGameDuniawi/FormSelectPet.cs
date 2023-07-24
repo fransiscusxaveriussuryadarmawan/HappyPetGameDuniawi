@@ -50,19 +50,27 @@ namespace HappyPetGameDuniawi
         private void button1_Click(object sender, EventArgs e)
         {
             //memastikan nama player tidak ada yang sama
-            foreach(Player p in frmGame.listPlayer)
+            if(frmGame.listPlayer.Count != 0)
             {
-                if(textBox1.Text == p.Name)
+                foreach (Player p in frmGame.listPlayer)
                 {
-                    MessageBox.Show("Player name already used. Please input another name");
-                    return;
+                    if (textBox1.Text == p.Name)
+                    {
+                        MessageBox.Show("Player name already used. Please input another name");
+                        return;
+                    }
+                    else
+                    {
+                        //make player
+                        frmGame.myPlayer = new Player(textBox1.Text, 100,
+                                    DateTime.Now);
+                    }
                 }
-                else
-                {
-                    //make player
-                    frmGame.myPlayer = new Player(textBox1.Text, 100,
-                                DateTime.Now);
-                }
+            }
+            else
+            {
+                frmGame.myPlayer = new Player(textBox1.Text, 100,
+                                    DateTime.Now);
             }
 
             //make pet

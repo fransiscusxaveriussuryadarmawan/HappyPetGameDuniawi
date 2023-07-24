@@ -3,14 +3,14 @@
   <Class Name="HappyPetGameDuniawi.Player">
     <Position X="1.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAAgAAgAAAAAAAAIAAAACAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAgAAgAAAAAAAAIAAAACAQAAAAkAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HappyPetGameDuniawi.Pet">
     <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAkiACAFIAAgAQAAAAECAQAAAgEAAAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAkigCAFYACgAQAAAAECAQAAAgEAAAAgAgEAABAAAg=</HashCode>
       <FileName>Pet.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -23,28 +23,28 @@
   <Class Name="HappyPetGameDuniawi.Cat">
     <Position X="2.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAgAgAAAQAAAAAAAAAAAAABAAAAAQQAgAAAAAAAAAA=</HashCode>
       <FileName>Cat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HappyPetGameDuniawi.Fish">
-    <Position X="4.5" Y="5.5" Width="1.5" />
+    <Position X="4.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAgACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Fish.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HappyPetGameDuniawi.Chameleon">
     <Position X="6.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAgAAASAAAAAAAAAAAAAAgAAEAIAAAAAAAAAAAAA=</HashCode>
       <FileName>Chameleon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HappyPetGameDuniawi.Toy">
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAhAAAAAQAAAAAAAAAAAAQAAAAEAAAAAAAAAAAQAAA=</HashCode>
+      <HashCode>ABAhgAAAAYAAAAAAAAAAAAQAAAAEAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Toy.cs</FileName>
     </TypeIdentifier>
   </Class>

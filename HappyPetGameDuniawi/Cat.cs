@@ -39,11 +39,13 @@ namespace HappyPetGameDuniawi
         {
             base.Health += 30;
             base.Energy += 50;
+            this.Owner.Coins += (int)((0.3 + 0.5) / 2 * 100.0);
         }
         public override void Sleep()
         {
             base.Health += 20;
             base.Energy += 70;
+            this.Owner.Coins += (int)((0.2 + 0.7) / 2.0 * 100.0); //+1
         }
         public override void Play(Toy toy)
         {
@@ -51,7 +53,7 @@ namespace HappyPetGameDuniawi
             base.Happiness += 50;
 
             //using toy
-            if(toy!= null)
+            if (toy!= null)
             {
                 base.Happiness += toy.Benefit;
             }
@@ -59,6 +61,7 @@ namespace HappyPetGameDuniawi
 
         public void Bath()
         {
+            this.Owner.Coins += (int)(0.3 / 2 * 100.0);
             base.Health += 30;
         }
         public void Vaccinate()

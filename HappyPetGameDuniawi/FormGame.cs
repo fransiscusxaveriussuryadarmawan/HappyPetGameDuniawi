@@ -59,12 +59,11 @@ namespace HappyPetGameDuniawi
 
         public void StartGame()
         {
-            
             //displaying data in label FormGame
             labelPlayerData.Text = myPlayer.DisplayData();
             labelPetData.Text = myPet.DisplayData();
             labelDateTime.Text = DateTime.Now.ToString();
-            presentCoins();
+            PresentCoins();
 
             pictureBoxCoins.Image = Properties.Resources.coins;
             panelData.Visible = true;
@@ -127,7 +126,7 @@ namespace HappyPetGameDuniawi
             timerGame.Start();
         }
 
-        private void presentCoins()
+        private void PresentCoins()
         {
             if (pictureBoxPresentCoins.Top != 0)
             {
@@ -321,6 +320,7 @@ namespace HappyPetGameDuniawi
                 ((Cat)myPet).Bath();
 
                 labelPetData.Text = myPet.DisplayData();
+                labelPlayerData.Text = myPlayer.DisplayData();
 
                 ChangeImageActivity("Bath");
 

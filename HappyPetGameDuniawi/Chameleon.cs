@@ -36,11 +36,13 @@ namespace HappyPetGameDuniawi
         {
             base.Health += 30;
             base.Energy += 50;
+            this.Owner.Coins += (int)((0.3 + 0.5) / 2 * 100.0);
         }
         public override void Sleep()
         {
             base.Health += 60;
             base.Energy += 60;
+            this.Owner.Coins += (int)((0.6 + 0.6) / 2 * 100.0);
         }
 
         public void CheckChangeColor() //ada delay karena frmGame.TimerGame
