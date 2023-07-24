@@ -471,6 +471,20 @@ namespace HappyPetGameDuniawi
                 buttonBath.BackColor = Color.WhiteSmoke;
                 timerBath.Start();
             }
+            else if(myPet is Monkey)
+            {
+                labelPlayerData.Text = myPlayer.DisplayData();
+                ((Monkey)myPet).Bath();
+
+                labelPetData.Text = myPet.DisplayData();
+                labelPlayerData.Text = myPlayer.DisplayData();
+
+                ChangeImageActivity("Bath");
+
+                buttonBath.Enabled = false;
+                buttonBath.BackColor = Color.WhiteSmoke;
+                timerBath.Start();
+            }
         }
 
         private void buttonVaccinate_Click(object sender, EventArgs e)
