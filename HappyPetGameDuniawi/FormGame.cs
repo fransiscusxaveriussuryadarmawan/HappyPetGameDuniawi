@@ -21,6 +21,8 @@ namespace HappyPetGameDuniawi
         public List<Pet> listPet = new List<Pet>();
 
         private int detik;
+        private int waktu;
+
         public FormGame()
         {
             InitializeComponent();
@@ -56,6 +58,7 @@ namespace HappyPetGameDuniawi
             labelPlayerData.Text = myPlayer.DisplayData();
             labelPetData.Text = myPet.DisplayData();
             labelDateTime.Text = DateTime.Now.ToString();
+            presentCoins();
 
             pictureBoxCoins.Image = Properties.Resources.coins;
             panelData.Visible = true;
@@ -116,6 +119,18 @@ namespace HappyPetGameDuniawi
 
             timerGame.Interval = 1000;
             timerGame.Start();
+        }
+
+        private void presentCoins()
+        {
+            if (pictureBoxPresentCoins.Top != 0)
+            {
+                pictureBoxPresentCoins.Image = Properties.Resources.presentCoins;
+            }
+            else
+            {
+                return;
+            }
         }
 
         //changing picture based on activity
@@ -529,6 +544,30 @@ namespace HappyPetGameDuniawi
                 labelTitle.Visible = true;
                 timerGame.Stop();
                 MessageBox.Show("All data has been erased");
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void pictureBoxPresentCoins_Click(object sender, EventArgs e)
+        {
+            pictureBoxPresentCoins.Top -= 1000;
+            waktu = 0;
+            timerPresent.Start();
+        }
+
+        private void timerPresent_Tick(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int present;
+            waktu++;
+            
+            if (waktu == 2)
+            {
+                present = rnd.Next(10, 200);
+                pictureBoxPresentCoins.Location = new Point(present, 200);
             }
             else
             {

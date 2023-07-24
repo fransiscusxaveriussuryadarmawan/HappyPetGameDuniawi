@@ -59,11 +59,14 @@ namespace HappyPetGameDuniawi
             this.timerBath = new System.Windows.Forms.Timer(this.components);
             this.timerClean = new System.Windows.Forms.Timer(this.components);
             this.timerChameleonAfk = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxPresentCoins = new System.Windows.Forms.PictureBox();
+            this.timerPresent = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panelData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCoins)).BeginInit();
             this.panelActivity.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPresentCoins)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -333,6 +336,21 @@ namespace HappyPetGameDuniawi
             this.timerChameleonAfk.Interval = 1000;
             this.timerChameleonAfk.Tick += new System.EventHandler(this.timerChameleonAfk_Tick);
             // 
+            // pictureBoxPresentCoins
+            // 
+            this.pictureBoxPresentCoins.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPresentCoins.Location = new System.Drawing.Point(8, 165);
+            this.pictureBoxPresentCoins.Name = "pictureBoxPresentCoins";
+            this.pictureBoxPresentCoins.Size = new System.Drawing.Size(90, 86);
+            this.pictureBoxPresentCoins.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPresentCoins.TabIndex = 4;
+            this.pictureBoxPresentCoins.TabStop = false;
+            this.pictureBoxPresentCoins.Click += new System.EventHandler(this.pictureBoxPresentCoins_Click);
+            // 
+            // timerPresent
+            // 
+            this.timerPresent.Tick += new System.EventHandler(this.timerPresent_Tick);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -341,6 +359,7 @@ namespace HappyPetGameDuniawi
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1063, 573);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBoxPresentCoins);
             this.Controls.Add(this.pictureBoxPet);
             this.Controls.Add(this.panelActivity);
             this.Controls.Add(this.panelData);
@@ -359,6 +378,7 @@ namespace HappyPetGameDuniawi
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCoins)).EndInit();
             this.panelActivity.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPresentCoins)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,6 +415,8 @@ namespace HappyPetGameDuniawi
         private System.Windows.Forms.Timer timerChameleonAfk;
         public System.Windows.Forms.Timer timerGame;
         private System.Windows.Forms.PictureBox pictureBoxCoins;
+        private System.Windows.Forms.PictureBox pictureBoxPresentCoins;
+        private System.Windows.Forms.Timer timerPresent;
     }
 }
 
