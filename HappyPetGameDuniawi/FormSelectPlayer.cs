@@ -46,6 +46,7 @@ namespace HappyPetGameDuniawi
             {
                 if (pa.Owner.Name == frmGame.myPlayer.Name)
                 {
+                    frmGame.myPet = pa;
                     frmGame.myPet.Owner = frmGame.myPlayer;
                 }
             }

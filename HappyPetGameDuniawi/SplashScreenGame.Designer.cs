@@ -79,13 +79,14 @@ namespace HappyPetGameDuniawi
             this.BackgroundImage = global::HappyPetGameDuniawi.Properties.Resources.Room;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.progressBarLoading);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.pictureBoxProgressBar);
             this.DoubleBuffered = true;
             this.Name = "SplashScreenGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SplashScreenGame";
+            this.Text = "Loading";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProgressBar)).EndInit();
             this.ResumeLayout(false);
 
