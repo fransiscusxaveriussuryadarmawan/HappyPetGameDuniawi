@@ -121,6 +121,51 @@ namespace HappyPetGameDuniawi
 
                 timerChameleonAfk.Start();
             }
+            else if(myPet is Penguin)
+            {
+                buttonPlay.Enabled = true;
+                buttonPlay.BackColor = Color.Lime;
+                buttonVaccinate.Enabled = false;
+                buttonVaccinate.BackColor = Color.Gray;
+                buttonBath.Enabled = false;
+                buttonBath.BackColor = Color.Gray;
+                buttonClean.Enabled = false;
+                buttonClean.BackColor = Color.Gray;
+                buttonFeed.Enabled = true;
+                buttonFeed.BackColor = Color.Crimson;
+                buttonSleep.Enabled = true;
+                buttonSleep.BackColor = Color.DeepSkyBlue;
+            }
+            else if(myPet is Crocodile)
+            {
+                buttonPlay.Enabled = false;
+                buttonPlay.BackColor = Color.Gray;
+                buttonVaccinate.Enabled = true;
+                buttonVaccinate.BackColor = Color.Violet;
+                buttonBath.Enabled = false;
+                buttonBath.BackColor = Color.Gray;
+                buttonClean.Enabled = true;
+                buttonClean.BackColor = Color.DarkOrange;
+                buttonFeed.Enabled = true;
+                buttonFeed.BackColor = Color.Crimson;
+                buttonSleep.Enabled = true;
+                buttonSleep.BackColor = Color.DeepSkyBlue;
+            }
+            else if(myPet is Monkey)
+            {
+                buttonPlay.Enabled = true;
+                buttonPlay.BackColor = Color.Lime;
+                buttonClean.Enabled = false;
+                buttonClean.BackColor = Color.Gray;
+                buttonBath.Enabled = true;
+                buttonBath.BackColor = Color.Yellow;
+                buttonVaccinate.Enabled = true;
+                buttonVaccinate.BackColor = Color.Violet;
+                buttonFeed.Enabled = true;
+                buttonFeed.BackColor = Color.Crimson;
+                buttonSleep.Enabled = true;
+                buttonSleep.BackColor = Color.DeepSkyBlue;
+            }
 
             timerGame.Interval = 1000;
             timerGame.Start();
