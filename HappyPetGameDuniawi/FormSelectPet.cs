@@ -103,5 +103,26 @@ namespace HappyPetGameDuniawi
             this.Close();
             this.Owner.Close();
         }
+
+        private void radioButtonPenguin_CheckedChanged(object sender, EventArgs e)
+        {
+            labelEnv.Visible = false;
+            comboBoxEnv.Visible = false;
+            textBoxPetName.Text = "Linux";
+        }
+
+        private void radioButtonMonkey_CheckedChanged(object sender, EventArgs e)
+        {
+            labelEnv.Visible = false;
+            comboBoxEnv.Visible = false;
+            textBoxPetName.Text = "George";
+        }
+
+        private void radioButtonCrocodile_CheckedChanged(object sender, EventArgs e)
+        {
+            labelEnv.Visible = false;
+            comboBoxEnv.Visible = false;
+            textBoxPetName.Text = "Irwin";
+        }
     }
 }
