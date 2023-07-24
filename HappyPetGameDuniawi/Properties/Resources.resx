@@ -244,4 +244,43 @@
   <data name="presentGet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\presentGet.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="coins_present" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coins_present.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodile_clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodile_clean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodile_feed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodile_feed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodile_happy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodile_happy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodile_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodile_sleep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodile_vaccinate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodile_vaccinate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkey_bath" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey_bath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkey_happpy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey_happpy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkey_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey_sleep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkey_vaccinate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey_vaccinate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="penguin_feed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\penguin_feed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="penguin_happy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\penguin_happy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="penguin_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\penguin_sleep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

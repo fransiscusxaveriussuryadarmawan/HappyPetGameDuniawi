@@ -318,5 +318,44 @@
   <ItemGroup>
     <None Include="Resources\presentGet.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins_present.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile_clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile_happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile_sleep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile_vaccinate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_bath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_happpy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_sleep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey_vaccinate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penguin_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penguin_happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penguin_sleep.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
