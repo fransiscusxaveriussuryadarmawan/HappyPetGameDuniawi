@@ -560,16 +560,26 @@ namespace HappyPetGameDuniawi
 
         private void timerPresent_Tick(object sender, EventArgs e)
         {
+            awal:
             Random rnd = new Random();
             int presentX;
             int presentY;
             waktu++;
-            
+
             if (waktu == 2)
             {
-                presentX = rnd.Next(10, 200);
+                presentX = rnd.Next(8, 720);
                 presentY = rnd.Next(120, 300);
-                pictureBoxPresentCoins.Location = new Point(150, presentY);
+
+                if (presentX >= 220 && presentX <= 520)
+                {
+                    waktu = 1;
+                    goto awal;
+                }
+                else
+                {
+                    pictureBoxPresentCoins.Location = new Point(presentX, presentY);
+                }
             }
             else
             {
