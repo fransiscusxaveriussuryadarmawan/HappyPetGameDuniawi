@@ -45,7 +45,7 @@ namespace HappyPetGameDuniawi
         {
             base.Health += 20;
             base.Energy += 70;
-            this.Owner.Coins += (int)((0.2 + 0.7) / 2.0 * 100.0); //+1
+            this.Owner.Coins += (int)(Math.Round((0.2 + 0.7) / 2.0,2) * 100.0);
         }
         public override void Play(Toy toy)
         {
