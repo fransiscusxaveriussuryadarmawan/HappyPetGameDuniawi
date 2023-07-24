@@ -678,8 +678,11 @@ namespace HappyPetGameDuniawi
 
         private void timerChameleonAfk_Tick(object sender, EventArgs e)
         {
-            ((Chameleon)myPet).PictureChangeChameleon();
-            pictureBoxPet.Image = myPet.Picture;
+            if(myPet is Chameleon)
+            {
+                ((Chameleon)myPet).PictureChangeChameleon();
+                pictureBoxPet.Image = myPet.Picture;
+            }
         }
 
         private void resetGameToolStripMenuItem_Click(object sender, EventArgs e)
