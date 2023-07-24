@@ -24,6 +24,7 @@ namespace HappyPetGameDuniawi
         SoundPlayer amimir = new SoundPlayer(Properties.Resources.Amimir);
         SoundPlayer eat = new SoundPlayer(Properties.Resources.eat);
         SoundPlayer fail = new SoundPlayer(Properties.Resources.fail);
+        SoundPlayer coin = new SoundPlayer(Properties.Resources.presentGet);
 
         private int detik;
         private int waktu;
@@ -559,6 +560,7 @@ namespace HappyPetGameDuniawi
         private void pictureBoxPresentCoins_Click(object sender, EventArgs e)
         {
             myPlayer.GetCoins();
+            coin.Play();
             labelPlayerData.Text = myPlayer.DisplayData();
             pictureBoxPresentCoins.Visible = false;
             waktu = 0;

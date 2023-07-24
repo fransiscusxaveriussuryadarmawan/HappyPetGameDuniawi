@@ -307,10 +307,13 @@
     <None Include="Resources\eat.wav" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Amimir.wav" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\fail.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Amimir.wav" />
+    <None Include="Resources\presentGet.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
