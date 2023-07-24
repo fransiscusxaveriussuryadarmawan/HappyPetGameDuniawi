@@ -485,6 +485,22 @@ namespace HappyPetGameDuniawi
                     labelPetData.Text = myPet.DisplayData();
                     ChangeImageActivity("Vaccinate");
                 }
+                if (myPet is Monkey)
+                {
+                    labelPlayerData.Text = myPlayer.DisplayData();
+                    ((Monkey)myPet).Vaccinate();
+
+                    labelPetData.Text = myPet.DisplayData();
+                    ChangeImageActivity("Vaccinate");
+                }
+                if(myPet is Crocodile)
+                {
+                    labelPlayerData.Text = myPlayer.DisplayData();
+                    ((Crocodile)myPet).Vaccinate();
+
+                    labelPetData.Text = myPet.DisplayData();
+                    ChangeImageActivity("Vaccinate");
+                }
             }
             catch(Exception x)
             {
